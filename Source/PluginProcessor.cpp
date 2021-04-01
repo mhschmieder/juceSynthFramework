@@ -200,22 +200,22 @@ void JuceSynthFrameworkAudioProcessor::processBlock (AudioSampleBuffer& buffer, 
         //if myVoice sucessfully casts as a SynthVoice*, get the voice and set the params
         if ((myVoice = dynamic_cast<SynthVoice*>(mySynth.getVoice(i))))
         {
-            myVoice->getEnvelopeParams(tree.getRawParameterValue("attack"),
-                                       tree.getRawParameterValue("decay"),
-                                       tree.getRawParameterValue("sustain"),
-                                       tree.getRawParameterValue("release"));
+            myVoice->getEnvelopeParams((float*)tree.getRawParameterValue("attack"),
+                                       (float*)tree.getRawParameterValue("decay"),
+                                       (float*)tree.getRawParameterValue("sustain"),
+                                       (float*)tree.getRawParameterValue("release"));
             
-            myVoice->getOscType(tree.getRawParameterValue("wavetype"));
-            myVoice->getOsc2Type(tree.getRawParameterValue("wavetype2"));
+            myVoice->getOscType((float*)tree.getRawParameterValue("wavetype"));
+            myVoice->getOsc2Type((float*)tree.getRawParameterValue("wavetype2"));
             
-            myVoice->getFilterParams(tree.getRawParameterValue("filterType"),
-                                     tree.getRawParameterValue("filterCutoff"),
-                                     tree.getRawParameterValue("filterRes"));
+            myVoice->getFilterParams((float*)tree.getRawParameterValue("filterType"),
+                                     (float*)tree.getRawParameterValue("filterCutoff"),
+                                     (float*)tree.getRawParameterValue("filterRes"));
             
-            myVoice->getWillsParams(tree.getRawParameterValue("mastergain"),
-                                    tree.getRawParameterValue("blend"),
-                                    tree.getRawParameterValue("pbup"),
-                                    tree.getRawParameterValue("pbdown"));
+            myVoice->getWillsParams((float*)tree.getRawParameterValue("mastergain"),
+                                    (float*)tree.getRawParameterValue("blend"),
+                                    (float*)tree.getRawParameterValue("pbup"),
+                                    (float*)tree.getRawParameterValue("pbdown"));
         }
     }
     

@@ -11,9 +11,8 @@
               pluginIsSynth="1" pluginWantsMidiIn="1" pluginProducesMidiOut="0"
               pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0" pluginAUExportPrefix="juceSynthFrameworkAU"
               aaxIdentifier="com.yourcompany.juceSynthFramework" pluginAAXCategory="2"
-              jucerVersion="5.4.1" pluginFormats="buildAU,buildStandalone"
-              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
-              headerPath="../../../Maximilian">
+              pluginFormats="buildAU,buildStandalone" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              headerPath="../../../Maximilian" jucerFormatVersion="1">
   <MAINGROUP id="Z0T8fs" name="juceSynthFramework">
     <GROUP id="{FDD0FFB0-7ABA-CAD0-AB6D-A607E5623CAE}" name="Source">
       <GROUP id="{B5469151-45EB-23CF-24BA-61DF6EF9FF89}" name="Maximilian">
